@@ -1,0 +1,19 @@
+<html>  
+
+<head>
+  <title>The Gossip Project</title>
+</head>  
+
+<body>
+  <h1>Pas si vite, moussaillon ! Donne nous ton petit nom</h1><br><br>
+
+  <form action="/", method="post">
+    Entre ton prénom :
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+    <input type="text" name="first_name">
+    <input type="submit" value="entre donc">
+  </form>
+    
+</body>
+
+</html>
